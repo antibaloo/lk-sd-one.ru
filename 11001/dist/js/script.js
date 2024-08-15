@@ -523,7 +523,7 @@ $(document).ready(function () {
      }
 
     //По умолчанию Аналитика
-    analiticLoad($("#filter-date-start-iso").val(), $("#filter-date-end-iso").val(),timezone);
+    //analiticLoad($("#filter-date-start-iso").val(), $("#filter-date-end-iso").val(),timezone);
 
     function timefilterbtn() {
         $(".btn-filter").each(function () {
@@ -821,7 +821,7 @@ $(document).ready(function () {
                 $("#filter-date-end-iso").val($(this).attr("data-end")).trigger('input');
                 $("#filter-date-start").val(moment($(this).attr("data-start")).format("DD.MM.YYYY HH:mm"));
                 $("#filter-date-end").val(moment($(this).attr("data-end")).format("DD.MM.YYYY HH:mm"));
-                analiticLoad($("#filter-date-start-iso").val(), $("#filter-date-end-iso").val(), timezone);
+                //analiticLoad($("#filter-date-start-iso").val(), $("#filter-date-end-iso").val(), timezone);
                 break;
             case "tab-monitoring":
                 $("#mon-filter-date-start-iso").val($(this).attr("data-start")).trigger('input');
@@ -844,7 +844,7 @@ $(document).ready(function () {
             $('#tab-analitika .filter-dates').prepend('<div class="custom-alert" role="alert">Ошибка, неправильно выбран период!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
         }
         else{
-            analiticLoad($("#filter-date-start-iso").val(), $("#filter-date-end-iso").val(),timezone);
+           //analiticLoad($("#filter-date-start-iso").val(), $("#filter-date-end-iso").val(),timezone);
             $('#tab-analitika .custom-alert').remove();
             $('#tab-analitika .filter-dates').removeClass('error');
             $('#tab-analitika .btn-filter').removeClass('active');
