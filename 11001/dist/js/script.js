@@ -84,11 +84,13 @@ $(document).ready(function () {
         minutesStep: 5,
         isMobile: true,
         onSelect({date, formattedDate, datepicker}) {
+            $('#filter-date-start-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
+            /*
             if (timezone == 0 || timezone == null) {
                 $('#filter-date-start-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
             } else {
                 $('#filter-date-start-iso').val(moment.tz(date, timezone).format("YYYY-MM-DDTHH:mm"));
-            }
+            }*/
             //console.log(date.toUTCString()); время по гринвичу
         }
     })
@@ -98,11 +100,13 @@ $(document).ready(function () {
         minutesStep: 5,
         isMobile: true,
         onSelect({date, formattedDate, datepicker}) {
+            $('#filter-date-end-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
+            /*
             if (timezone == 0 || timezone == null) {
                 $('#filter-date-end-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
             } else {
                 $('#filter-date-end-iso').val(moment.tz(date, timezone).format("YYYY-MM-DDTHH:mm"));
-            }
+            }*/
         }
     })
 
@@ -112,11 +116,13 @@ $(document).ready(function () {
         minutesStep: 5,
         isMobile: true,
         onSelect({date, formattedDate, datepicker}) {
+            $('#mon-filter-date-start-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
+            /*
             if (timezone == 0 || timezone == null) {
                 $('#mon-filter-date-start-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
             } else {
                 $('#mon-filter-date-start-iso').val(moment.tz(date, timezone).format("YYYY-MM-DDTHH:mm"));
-            }
+            }*/
             //console.log(date.toUTCString()); время по гринвичу
         }
     })
@@ -127,11 +133,13 @@ $(document).ready(function () {
         minutesStep: 5,
         isMobile: true,
         onSelect({date, formattedDate, datepicker}) {
+            $('#mon-filter-date-end-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
+            /*
             if (timezone == 0 || timezone == null) {
                 $('#mon-filter-date-end-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
             } else {
                 $('#mon-filter-date-end-iso').val(moment.tz(date, timezone).format("YYYY-MM-DDTHH:mm"));
-            }
+            }*/
         }
     })
 
