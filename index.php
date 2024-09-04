@@ -574,7 +574,7 @@
 <script src="/dist/js/moment.js" type="text/javascript"></script>
 <script src="/dist/js/moment-timezone-with-data.js" type="text/javascript"></script>
 <script src="/dist/slick/slick.min.js" type="text/javascript"></script>
-<script src="/dist/js/script.js" type="text/javascript"></script>
+<script src="/dist/js/script.js?t=<?=time();?>" type="text/javascript"></script>
 <script src="/dist/js/map-cluster.js" type="text/javascript"></script>
 </body>
 </html>

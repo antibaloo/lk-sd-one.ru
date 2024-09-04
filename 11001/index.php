@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Drill S15</title>
+    <title>Smart Drill S50</title>
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap-utilities.min.css">
@@ -23,14 +23,14 @@
                         <div id="slick_drill">
                             <div class="el-up item">
                                 <div class="field-images_1">
-                                    <img src="dist/img/webp/sgp.webp" class="item-1" width="132" height="19" />
+                                    <img src="dist/img/webp/zbo.webp" class="item-1" width="132" height="19" />
                                 </div>
                                 <div class="field-images_2">
                                     <img src="dist/img/webp/rig.webp" class="item-2" width="174" height="170" />
                                 </div>
                                 <div
                                     class="field-title d-flex align-items-center justify-content-center justify-content-lg-between">
-                                    <span>SN 10001</span>
+                                    <span>SN 11001</span>
                                     <select name="" class="time-zone">
                                         <option value="0">Часовой пояс</option>
                                         <option value="Europe/Kaliningrad">Калининград (UTC+2)</option>
@@ -49,14 +49,14 @@
                             </div>
                             <div class="el-up item">
                                 <div class="field-images_1">
-                                    <img src="dist/img/webp/sgp.webp" class="item-1" width="132" height="19" />
+                                    <img src="dist/img/webp/zbo.webp" class="item-1" width="132" height="19" />
                                 </div>
                                 <div class="field-images_2">
                                     <img src="dist/img/webp/rig.webp" class="item-2" width="174" height="170" />
                                 </div>
                                 <div
                                     class="field-title d-flex align-items-center justify-content-center justify-content-lg-between">
-                                    <span>SN 10001</span>
+                                    <span>SN 11001</span>
                                     <select name="" class="time-zone">
                                         <option value="0">Часовой пояс</option>
                                         <option value="Europe/Kaliningrad">Калининград (UTC+2)</option>
@@ -91,7 +91,7 @@
                             <div class="col-auto">
                                 <button data-tab="tab-analitika" data-wrapper="tabs-wr-1"
                                     class="btn btn-primary btn-lg fw-bolder py-2 py-md-3 px-4 lh-1 text-center btn-tabs"
-                                    id="btn-tab-analitika">Аналитика
+                                    id="btn-tab-analitika" disabled>Аналитика
                                 </button>
                             </div>
                             <div class="col-auto">
@@ -175,21 +175,21 @@
                                 <div class="tabs row justify-content-center mb-4">
                                     <div class="col-auto mb-2">
                                         <button data-tab="tab-sobitiya" data-wrapper="tabs-wr-2"
-                                            class="btn btn-primary py-2 px-3 py-sm-3 px-sm-4 lh-1 text-center active btn-tabs fw-bold">
-                                            События
-                                        </button>
+                                        class="btn btn-primary py-2 px-3 py-sm-3 px-sm-4 lh-1 text-center active btn-tabs fw-bold">
+                                        События
+                                    </button>
                                     </div>
                                     <div class="col-auto mb-2">
                                         <button data-tab="tab-toplivo" data-wrapper="tabs-wr-2"
-                                            class="btn btn-primary py-2 px-3 py-md-3 px-m-4 lh-1 text-center btn-tabs fw-bold">
-                                            Топливо
-                                        </button>
+                                        class="btn btn-primary py-2 px-3 py-md-3 px-m-4 lh-1 text-center btn-tabs fw-bold">
+                                        Топливо
+                                    </button>
                                     </div>
                                     <div class="col-auto mb-2">
                                         <button data-tab="tab-skvazhini" data-wrapper="tabs-wr-2"
-                                            class="btn btn-primary py-2 px-3 py-md-3 px-m-4 lh-1 text-center btn-tabs fw-bold">
-                                            Скважины
-                                        </button>
+                                        class="btn btn-primary py-2 px-3 py-md-3 px-m-4 lh-1 text-center btn-tabs fw-bold">
+                                        Скважины
+                                    </button>
                                     </div>
                                 </div>
                                 <div class="tabs-wrapper" id="tabs-wr-2">
@@ -266,15 +266,14 @@
                                 <div class="filter-dates d-flex flex-wrap align-items-center py-2 ps-4 pe-5">
                                     <input type="text" class="filter-date filter-date-start" id="mon-filter-date-start"
                                         placeholder="дд-мм-гггг чч:мм" value="">
-                                    <input type="text" class="filter-date filter-date-start-iso d-none"
-                                        id="mon-filter-date-start-iso" placeholder="дд-мм-гггг чч:мм" value="">
+                                    <input type="text" class="filter-date filter-date-start-iso d-none" id="mon-filter-date-start-iso"
+                                        placeholder="дд-мм-гггг чч:мм" value="">
                                     <span class="line"></span>
                                     <input type="text" class="filter-date filter-date-end" id="mon-filter-date-end"
                                         placeholder="дд-мм-гггг чч:мм" value="">
-                                    <input type="text" class="filter-date filter-date-end-iso d-none"
-                                        id="mon-filter-date-end-iso" placeholder="дд-мм-гггг чч:мм" value="">
-                                    <button id="mon-filter-date-submit"
-                                        class="filter-date-submit position-absolute border-0 rounded-circle">
+                                    <input type="text" class="filter-date filter-date-end-iso d-none" id="mon-filter-date-end-iso"
+                                        placeholder="дд-мм-гггг чч:мм" value="">
+                                    <button id="mon-filter-date-submit" class="filter-date-submit position-absolute border-0 rounded-circle">
                                         Применить
                                     </button>
                                 </div>
@@ -311,36 +310,36 @@
                     <section class="tabs-wrapper" id="tabs-wr-3">
                         <div id="rig" class="tab-item active">
                             <div class="graphs50">
-                                <div class="graph" id="2811">
-                                    <a href=""><img src="dist/img/loader.gif"></a>
-                                </div>
+                              <div class="graph" id="2823">
+                                <a href=""><img src="dist/img/loader.gif"></a>
+                              </div>
                             </div>
-                        </div>
-                        <div id="engine" class="tab-item">
+                          </div>
+                          <div id="engine" class="tab-item">
                             <div class="graphs50">
-                                <div class="graph" id="2817">
-                                    <a href=""><img src="dist/img/loader.gif"></a>
-                                </div>
+                              <div class="graph" id="2827">
+                                <a href=""><img src="dist/img/loader.gif"></a>
+                              </div>
                             </div>
-                        </div>
-                        <div id="sum" class="tab-item">
+                          </div>
+                          <div id="sum" class="tab-item">
                             <div class="graphs100">
-                                <div class="graph" id="2808">
-                                    <a href=""><img src="dist/img/loader.gif"></a>
-                                </div>
+                              <div class="graph" id="2825">
+                                <a href=""><img src="dist/img/loader.gif"></a>
+                              </div>
                             </div>
-                        </div>
-                        <div id="input" class="tab-item">
+                          </div>
+                          <div id="input" class="tab-item">
                             <div class="graphs50">
-                                <div class="graph" id="2814">
-                                    <a href=""><img src="dist/img/loader.gif"></a>
-                                </div>
+                              <div class="graph" id="2829">
+                                <a href=""><img src="dist/img/loader.gif"></a>
+                              </div>
                             </div>
-                        </div>
+                          </div>
                     </section>
                     <!--tabs end-->
-                    <div class="block-title text-center mb-3 mb-sm-4 mt-3 mt-sm-5 pt-3 fw-bold"><span
-                            class="fw-bolder">Исходные диаграммы с группировкой</span>
+                    <div class="block-title text-center mb-3 mb-sm-4 mt-3 mt-sm-5 pt-3 fw-bold">
+                        <span class="fw-bolder">Исходные диаграммы с группировкой</span>
                     </div>
                     <!--tabs-->
                     <div class="tabs row justify-content-center fw-bold mb-3">
@@ -368,200 +367,116 @@
                     </div>
                     <section class="tabs-wrapper" id="tabs-wr-4">
                         <div id="ish-rig" class="tab-item active">
-                            <div class="chart" id="47532">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48389">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="48319">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48441">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47530">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48437">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="48313">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48439">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47515">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48433">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47535">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48435">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47520">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48391">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47521">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48445">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47558">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48447">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47571">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48393">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47536">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47528">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47551">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47540">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47523">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="48325">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47516">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47533">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47524">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47522">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47550">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47549">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47526">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47527">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47538">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47539">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48431">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
                         </div>
                         <div id="ish-input" class="tab-item">
-                            <div class="chart" id="48337">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48457">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="48325">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48459">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="48310">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48461">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="48316">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48463">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="48322">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="48328">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="48313">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="48319">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48465">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
                         </div>
                         <div id="ish-engine" class="tab-item">
-                            <div class="chart" id="47525">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48397">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47570">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48405">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47569">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48403">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47543">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48424">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47552">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48443">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47553">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48415">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47567">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48414">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47531">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48395">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47568">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48399">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="48307">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48425">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47545">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48401">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47544">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48428">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47547">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48426">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47546">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48427">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
                         </div>
                         <div id="ish-alarms" class="tab-item">
-                            <div class="chart" id="47551">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48408">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47541">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48409">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47542">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48416">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47537">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48417">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
-                            <div class="chart" id="47557">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47556">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47562">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47561">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47566">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47565">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47560">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47559">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47564">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47563">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="47548">
-                                <a href=""><img src="dist/img/loader.gif"></a>
+                            <div class="chart" id="48429">
+                              <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
                         </div>
                     </section>
@@ -578,7 +493,7 @@
     <script src="dist/js/moment.js" type="text/javascript"></script>
     <script src="dist/js/moment-timezone-with-data.js" type="text/javascript"></script>
     <script src="dist/slick/slick.min.js" type="text/javascript"></script>
-    <script src="dist/js/script.js" type="text/javascript"></script>
+    <script src="dist/js/script.js?t=<?=time();?>" type="text/javascript"></script>
     <script src="dist/js/map-cluster.js" type="text/javascript"></script>
 </body>
 </html>
