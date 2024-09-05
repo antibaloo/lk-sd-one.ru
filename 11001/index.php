@@ -32,7 +32,6 @@
                                     class="field-title d-flex align-items-center justify-content-center justify-content-lg-between">
                                     <span>SN 11001</span>
                                     <select name="" class="time-zone">
-                                        <option value="0">Часовой пояс</option>
                                         <option value="Europe/Kaliningrad">Калининград (UTC+2)</option>
                                         <option value="Europe/Moscow">Москва (UTC+3)</option>
                                         <option value="Europe/Samara">Самара (UTC+4)</option>
