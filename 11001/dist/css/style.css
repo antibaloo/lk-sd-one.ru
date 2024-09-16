@@ -132,7 +132,7 @@ img {
     margin: 0 -2px;
 }
 
-#tab-monitoring .row>*{
+#tab-monitoring .row>*, #tab-analitika .row>*{
     padding: 0 2px;
 }
 
@@ -213,7 +213,7 @@ img {
     outline: none !important;
 }
 
-#tab-monitoring .filter-date {
+#tab-analitika .filter-date, #tab-monitoring .filter-date {
     width: 140px;
     text-align: center;
 }
@@ -226,11 +226,11 @@ img {
     margin: 0 15px;
 }
 
-#tab-monitoring .filter-dates .line {
+#tab-analitika .filter-dates .line, #tab-monitoring .filter-dates .line {
     margin: 0 10px;
 }
 
-#tab-monitoring .col-date-period{
+#tab-analitika .col-date-period, #tab-monitoring .col-date-period{
     flex: 0 0 399px;
     max-width: 399px;
 }
@@ -543,7 +543,7 @@ img {
         max-width: 100%;
     }
 
-    #tab-monitoring .filter-date{
+    #tab-monitoring .filter-date, #tab-analitika .filter-date{
         text-align: left;
     }
 
@@ -585,7 +585,7 @@ img {
         justify-content: space-between;
     }
 
-    .filter-date, #tab-monitoring .filter-date {
+    .filter-date, #tab-monitoring .filter-date , #tab-analitika .filter-date {
         width: 145px;
     }
 
@@ -985,19 +985,15 @@ img {
         border-bottom-right-radius: 25px;
     }
 
-    #tab-monitoring .filter-btns, #tab-analitika .filter-btns {
-        /*padding: 19px 15px 20px;*/
-    }
-
     .btn-filter, #tab-analitika .btn-filter {
         padding: 4.5px 11px;
     }
 
-    #tab-monitoring .filter-date {
+    #tab-monitoring .filter-date , #tab-analitika .filter-date {
         width: 112px;
     }
 
-    #tab-monitoring .filter-dates{
+    #tab-analitika .filter-dates, #tab-monitoring .filter-dates{
         padding: 4px 28px 4px 9px !important;
         justify-content: center;
     }
@@ -1010,7 +1006,7 @@ img {
         padding: 10.5px 5px;
     }
 
-    #tab-monitoring .filter-date{
+    #tab-monitoring .filter-date, #tab-analitika .filter-date{
         font-size: 13px;
         text-align: center;
     }
@@ -1020,7 +1016,7 @@ img {
         height: 27px;
     }
 
-    #tab-monitoring .filter-dates .line {
+    #tab-monitoring .filter-dates .line, #tab-analitika .filter-dates .line{
         margin: 0 5px;
       }
 }

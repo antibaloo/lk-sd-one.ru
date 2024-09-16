@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="dist/font/Inter.css">
     <link rel="stylesheet" href="dist/slick/slick.css">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css?t=<?=time();?>">
 </head>
 <body>
     <header id="header">
@@ -90,7 +90,7 @@
                             <div class="col-auto">
                                 <button data-tab="tab-analitika" data-wrapper="tabs-wr-1"
                                     class="btn btn-primary btn-lg fw-bolder py-2 py-md-3 px-4 lh-1 text-center btn-tabs"
-                                    id="btn-tab-analitika" disabled>Аналитика
+                                    id="btn-tab-analitika">Аналитика
                                 </button>
                             </div>
                             <div class="col-auto">
@@ -158,73 +158,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="charts-tpl" style="display:none">
-                        <div class="ciklogramma-title">Циклограмма за выбранный период</div>
-                        <div id="myChart_ciklogramma" class="chart--container loaded"></div>
-                    </div>
                     <div class="row">
-                        <div class="col-xl-4 col-lg-5 mb-4 mb-lg-0">
-                            <div class="charts-tpl">
-                                <div class="vrd-title">Временная диаграмма работы установки</div>
-                                <div id="myChart_vremennaya_diagramma" class="chart--container loaded"></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="charts-tpl">
-                                <div class="tabs row justify-content-center mb-4">
-                                    <div class="col-auto mb-2">
-                                        <button data-tab="tab-sobitiya" data-wrapper="tabs-wr-2"
-                                        class="btn btn-primary py-2 px-3 py-sm-3 px-sm-4 lh-1 text-center active btn-tabs fw-bold">
-                                        События
-                                    </button>
-                                    </div>
-                                    <div class="col-auto mb-2">
-                                        <button data-tab="tab-toplivo" data-wrapper="tabs-wr-2"
-                                        class="btn btn-primary py-2 px-3 py-md-3 px-m-4 lh-1 text-center btn-tabs fw-bold">
-                                        Топливо
-                                    </button>
-                                    </div>
-                                    <div class="col-auto mb-2">
-                                        <button data-tab="tab-skvazhini" data-wrapper="tabs-wr-2"
-                                        class="btn btn-primary py-2 px-3 py-md-3 px-m-4 lh-1 text-center btn-tabs fw-bold">
-                                        Скважины
-                                    </button>
-                                    </div>
-                                </div>
-                                <div class="tabs-wrapper" id="tabs-wr-2">
-                                    <div class="tab-item active" id="tab-sobitiya">
-                                        <div class="custom-charts-pie d-flex flex-wrap justify-content-center">
-                                            <div class="item col-md-4 col-sm-6 col-12 mb-3 mb-sm-5">
-                                                <div class="item_tpl">
-                                                    <div class="item_number_value" id="event-tripcount">0</div>
-                                                    <div class="field-title">Количество рейсов</div>
-                                                </div>
-                                            </div>
-                                            <div class="item col-md-4 col-sm-6 col-12 mb-3 mb-sm-5">
-                                                <div class="item_tpl">
-                                                    <div class="item_number_value" id="event-avgtripspeed">0</div>
-                                                    <div class="field-title">Ср. рейсовая скорость</div>
-                                                </div>
-                                            </div>
-                                            <div class="item col-md-4 col-sm-6 col-12 mb-3 mb-sm-5">
-                                                <div class="item_tpl">
-                                                    <div class="item_number_value" id="event-alarms">0</div>
-                                                    <div class="field-title">Аварийные подъемы</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="myChart_sobitiya" class="chart--container"></div>
-                                    </div>
-                                    <div class="tab-item" id="tab-toplivo">
-                                        <div class="custom-charts-pie d-flex flex-wrap justify-content-center">
-                                            <div id="myChart_fuel_wrapper" class="chart--container loaded"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-item" id="tab-skvazhini">
-                                        <div id="map-skvazhini"></div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="charts-tpl" style="height: 2000px; margin: 0; border:0; padding: 0;">
+                            <iframe id="datalens" frameborder="0" style="border:0; width:100%; height:100%;"></iframe>
                         </div>
                     </div>
                 </div>
@@ -235,7 +171,7 @@
                                 <div class="filter-title"><!--Временные фильтры--></div>
                                 <div class="filter-btns flex-wrap">
                                     <div class="col-auto col-filter-item">
-                                        <button class="btn-filter btn btn-primary" data-name="5min">5 мин</button>
+                                        <button class="btn-filter btn btn-primary active" data-name="5min">5 мин</button>
                                     </div>
                                     <div class="col-auto col-filter-item">
                                         <button class="btn-filter btn btn-primary" data-name="30min">30 мин</button>
@@ -253,7 +189,7 @@
                                         <button class="btn-filter btn btn-primary" data-name="12hour">12 часов</button>
                                     </div>
                                     <div class="col-auto col-filter-item">
-                                        <button class="btn-filter btn btn-primary active" data-name="1day">1
+                                        <button class="btn-filter btn btn-primary" data-name="1day">1
                                             день</button>
                                     </div>
                                 </div>
@@ -265,14 +201,15 @@
                                 <div class="filter-dates d-flex flex-wrap align-items-center py-2 ps-4 pe-5">
                                     <input type="text" class="filter-date filter-date-start" id="mon-filter-date-start"
                                         placeholder="дд-мм-гггг чч:мм" value="">
-                                    <input type="text" class="filter-date filter-date-start-iso d-none" id="mon-filter-date-start-iso"
-                                        placeholder="дд-мм-гггг чч:мм" value="">
+                                    <input type="text" class="filter-date filter-date-start-iso d-none" 
+                                        id="mon-filter-date-start-iso" placeholder="дд-мм-гггг чч:мм" value="">
                                     <span class="line"></span>
                                     <input type="text" class="filter-date filter-date-end" id="mon-filter-date-end"
                                         placeholder="дд-мм-гггг чч:мм" value="">
-                                    <input type="text" class="filter-date filter-date-end-iso d-none" id="mon-filter-date-end-iso"
-                                        placeholder="дд-мм-гггг чч:мм" value="">
-                                    <button id="mon-filter-date-submit" class="filter-date-submit position-absolute border-0 rounded-circle">
+                                    <input type="text" class="filter-date filter-date-end-iso d-none" 
+                                        id="mon-filter-date-end-iso" placeholder="дд-мм-гггг чч:мм" value="">
+                                    <button id="mon-filter-date-submit" 
+                                        class="filter-date-submit position-absolute border-0 rounded-circle">
                                         Применить
                                     </button>
                                 </div>
@@ -493,6 +430,5 @@
     <script src="dist/js/moment-timezone-with-data.js" type="text/javascript"></script>
     <script src="dist/slick/slick.min.js" type="text/javascript"></script>
     <script src="dist/js/script.js?t=<?=time();?>" type="text/javascript"></script>
-    <script src="dist/js/map-cluster.js" type="text/javascript"></script>
 </body>
 </html>
