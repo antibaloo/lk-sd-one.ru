@@ -985,10 +985,6 @@ img {
         border-bottom-right-radius: 25px;
     }
 
-    #tab-monitoring .filter-btns, #tab-analitika .filter-btns {
-        /*padding: 19px 15px 20px;*/
-    }
-
     .btn-filter, #tab-analitika .btn-filter {
         padding: 4.5px 11px;
     }
