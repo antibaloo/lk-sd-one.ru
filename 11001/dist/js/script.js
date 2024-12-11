@@ -83,6 +83,7 @@ $(document).ready(function () {
         timepicker: true,
         minutesStep: 5,
         isMobile: true,
+        startDate: new Date(new Date().setHours(0, 0, 0, 0)),
         onSelect({date, formattedDate, datepicker}) {
             $('#filter-date-start-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
             /*
@@ -99,6 +100,7 @@ $(document).ready(function () {
         timepicker: true,
         minutesStep: 5,
         isMobile: true,
+        startDate: new Date(new Date().setHours(0, 0, 0, 0)),
         onSelect({date, formattedDate, datepicker}) {
             $('#filter-date-end-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
             /*
@@ -115,6 +117,7 @@ $(document).ready(function () {
         timepicker: true,
         minutesStep: 5,
         isMobile: true,
+        startDate: new Date(new Date().setHours(0, 0, 0, 0)),
         onSelect({date, formattedDate, datepicker}) {
             $('#mon-filter-date-start-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
             /*
@@ -132,6 +135,7 @@ $(document).ready(function () {
         timepicker: true,
         minutesStep: 5,
         isMobile: true,
+        startDate: new Date(new Date().setHours(0, 0, 0, 0)),
         onSelect({date, formattedDate, datepicker}) {
             $('#mon-filter-date-end-iso').val(moment(date).format("YYYY-MM-DDTHH:mm"));
             /*
@@ -169,34 +173,35 @@ $(document).ready(function () {
     /*11.06.2024*****************************************
      ****************************************************
      ****************************************************/
-     t = new Date();
-     f = new Date(new Date().setHours(0, 0, 0, 0))
+     t = new Date(); //Текущая дата
+     f = new Date(new Date().setHours(0, 0, 0, 0)) // Начало текущего дня
+     yf = new Date(f.getTime()- 24*60*60*1000) // Начало вчерашнего дня
+     yt = new Date(f.getTime()) // Конец вчера
      if (timezone == 0 || timezone == null) {
          t.setMinutes(t.getMinutes());
-         $("#filter-date-end-iso").val(moment(t).format("YYYY-MM-DDTHH:mm"));
-         $("#filter-date-end").val(moment(t).format("DD.MM.YYYY HH:mm"));
+         $("#filter-date-end-iso").val(moment(yt).format("YYYY-MM-DDTHH:mm"));
+         $("#filter-date-end").val(moment(yt).format("DD.MM.YYYY HH:mm"));
          $("#mon-filter-date-end-iso").val(moment(t).format("YYYY-MM-DDTHH:mm"));
          $("#mon-filter-date-end").val(moment(t).format("DD.MM.YYYY HH:mm"));
  
          f.setMinutes(f.getMinutes());
-         $("#filter-date-start-iso").val(moment(f).format("YYYY-MM-DDTHH:mm"));
-         $("#filter-date-start").val(moment(f).format("DD.MM.YYYY HH:mm"));
+         $("#filter-date-start-iso").val(moment(yf).format("YYYY-MM-DDTHH:mm"));
+         $("#filter-date-start").val(moment(yf).format("DD.MM.YYYY HH:mm"));
          $("#mon-filter-date-start-iso").val(moment(f).format("YYYY-MM-DDTHH:mm"));
          $("#mon-filter-date-start").val(moment(f).format("DD.MM.YYYY HH:mm"));
      } else {
          t.setMinutes(t.getMinutes());
-         $("#filter-date-end-iso").val(moment.tz(t, timezone).format("YYYY-MM-DDTHH:mm"));
-         $("#filter-date-end").val(moment.tz(t, timezone).format("DD.MM.YYYY HH:mm"));
+         $("#filter-date-end-iso").val(moment.tz(yt, timezone).format("YYYY-MM-DDTHH:mm"));
+         $("#filter-date-end").val(moment.tz(yt, timezone).format("DD.MM.YYYY HH:mm"));
          $("#mon-filter-date-end-iso").val(moment.tz(t, timezone).format("YYYY-MM-DDTHH:mm"));
          $("#mon-filter-date-end").val(moment.tz(t, timezone).format("DD.MM.YYYY HH:mm"));
  
          f.setMinutes(f.getMinutes());
-         $("#filter-date-start-iso").val(moment(f).format("YYYY-MM-DDTHH:mm"));
-         $("#filter-date-start").val(moment(f).format("DD.MM.YYYY HH:mm"));
+         $("#filter-date-start-iso").val(moment(yf).format("YYYY-MM-DDTHH:mm"));
+         $("#filter-date-start").val(moment(yf).format("DD.MM.YYYY HH:mm"));
          $("#mon-filter-date-start-iso").val(moment(f).format("YYYY-MM-DDTHH:mm"));
          $("#mon-filter-date-start").val(moment(f).format("DD.MM.YYYY HH:mm"));
      }
-
     //По умолчанию Аналитика
     analiticLoad($("#filter-date-start-iso").val(), $("#filter-date-end-iso").val(),timezone);
 

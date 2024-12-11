@@ -115,11 +115,11 @@
                                 <div class="filter-title"><!--Временные фильтры--></div>
                                 <div class="filter-btns flex-wrap">
                                     <div class="col-auto col-filter-item">
-                                        <button class="btn-filter btn btn-primary active"
+                                        <button class="btn-filter btn btn-primary"
                                             data-name="1day">Сегодня</button>
                                     </div>
                                     <div class="col-auto col-filter-item">
-                                        <button class="btn-filter btn btn-primary" data-name="yesterday">Вчера</button>
+                                        <button class="btn-filter btn btn-primary active" data-name="yesterday">Вчера</button>
                                     </div>
                                     <div class="col-auto col-filter-item">
                                         <button class="btn-filter btn btn-primary" data-name="beforeYesterday">Позавчера
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="charts-tpl" style="height: 2000px; margin: 0; border:0; padding: 0;">
+                        <div class="charts-tpl" style="height: 2200px; margin: 0; border:0; padding: 0;">
                             <iframe id="datalens" frameborder="0" style="border:0; width:100%; height:100%;"></iframe>
                         </div>
                     </div>
@@ -171,7 +171,7 @@
                                 <div class="filter-title"><!--Временные фильтры--></div>
                                 <div class="filter-btns flex-wrap">
                                     <div class="col-auto col-filter-item">
-                                        <button class="btn-filter btn btn-primary active" data-name="5min">5 мин</button>
+                                        <button class="btn-filter btn btn-primary" data-name="5min">5 мин</button>
                                     </div>
                                     <div class="col-auto col-filter-item">
                                         <button class="btn-filter btn btn-primary" data-name="30min">30 мин</button>
@@ -189,7 +189,7 @@
                                         <button class="btn-filter btn btn-primary" data-name="12hour">12 часов</button>
                                     </div>
                                     <div class="col-auto col-filter-item">
-                                        <button class="btn-filter btn btn-primary" data-name="1day">1
+                                        <button class="btn-filter btn btn-primary active" data-name="1day">1
                                             день</button>
                                     </div>
                                 </div>

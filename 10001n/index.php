@@ -159,7 +159,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="charts-tpl" style="height: 2000px; margin: 0; border:0; padding:0;">
+                        <div class="charts-tpl" style="height: 2400px; margin: 0; border:0; padding:0;">
                             <iframe id="datalens" frameborder="0" style="border:0; width:100%; height:100%;"></iframe>
                         </div>
                     </div>
