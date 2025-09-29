@@ -28,6 +28,7 @@ function init() {
         },
         dataType: 'json',
         success: function (data) {
+            console.log(data);
             var myMap = new ymaps.Map("map", {
                 center: [data.Latitude, data.Longitude],
                     zoom: 10
@@ -44,6 +45,9 @@ function init() {
         
             myMap.geoObjects.add(myPlacemark);
             myMap.controls.remove('searchControl');
+        },
+        error: function (data){
+            console.log(data);
         }
     });
     //myMap.behaviors.disable('scrollZoom');

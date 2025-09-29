@@ -30,7 +30,7 @@
                                 </div>
                                 <div
                                     class="field-title d-flex align-items-center justify-content-center justify-content-lg-between">
-                                    <span>SN 11001</span>
+                                    <span>SN 001</span>
                                     <select name="" class="time-zone">
                                         <option value="Europe/Kaliningrad">Калининград (UTC+2)</option>
                                         <option value="Europe/Moscow">Москва (UTC+3)</option>

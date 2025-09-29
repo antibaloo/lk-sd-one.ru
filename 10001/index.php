@@ -30,7 +30,7 @@
                                 </div>
                                 <div
                                     class="field-title d-flex align-items-center justify-content-center justify-content-lg-between">
-                                    <span>SN 10001</span>
+                                    <span>SN 047</span>
                                     <select name="" class="time-zone">
                                         <option value="Europe/Kaliningrad">Калининград (UTC+2)</option>
                                         <option value="Europe/Moscow">Москва (UTC+3)</option>
@@ -498,9 +498,6 @@
                                 <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
                             <div class="chart" id="47568">
-                                <a href=""><img src="dist/img/loader.gif"></a>
-                            </div>
-                            <div class="chart" id="48307">
                                 <a href=""><img src="dist/img/loader.gif"></a>
                             </div>
                             <div class="chart" id="47545">
